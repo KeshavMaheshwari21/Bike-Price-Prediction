@@ -52,7 +52,7 @@ if st.button('Predict Price'):
         
         # Predict the price
         predicted_price = model.predict(features)[0]  # Extract the predicted price value
-        st.markdown(f"Predicted Price: {predicted_price}")  # Debug predicted price
+        st.write(f"Predicted Price: {predicted_price}")  # Debug predicted price
         
         # Display the result with larger font and centered
         st.markdown(
