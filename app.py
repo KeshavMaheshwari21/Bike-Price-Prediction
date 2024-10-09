@@ -61,5 +61,5 @@ if st.button('Predict Price'):
             unsafe_allow_html=True
         )
     except Exception as e:
-        st.error(f"")
+        st.error(f"Predicted Price: {predicted_price}")
 
