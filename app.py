@@ -49,13 +49,10 @@ st.markdown(
 
 if st.button('Predict Price'):
     try:
-        # Prepare the features as a numpy array
-        features = np.array([[kms_driven, owner, age, power, brand_encoded]])
-        st.write(f"Features: {features}")  # Check feature input
         
         # Predict the price
         predicted_price = model.predict(features)[0]  # Extract the predicted price value
-        st.write(f"Predicted Price: {predicted_price}")  # Debug predicted price
+        st.markdown(f"Predicted Price: {predicted_price}")  # Debug predicted price
         
         # Display the result with larger font and centered
         st.markdown(
@@ -64,5 +61,5 @@ if st.button('Predict Price'):
             unsafe_allow_html=True
         )
     except Exception as e:
-        st.error(f"Error during prediction: {str(e)}")
+        st.error(f"")
 
