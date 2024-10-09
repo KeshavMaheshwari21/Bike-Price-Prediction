@@ -4,7 +4,7 @@ import numpy as np
 from PIL import Image
 
 # Load the trained model using pickle
-with open('./models/lineraRegression.pkl', 'rb') as file:
+with open('./model/lineraRegression.pkl', 'rb') as file:
     model = pickle.load(file)
 
 
